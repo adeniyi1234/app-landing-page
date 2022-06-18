@@ -1,3 +1,10 @@
+$(window).on("load", function( ) {
+    $(".preloader").fadeOut("slow");
+
+});
+
+
+
 $(document).ready(function() {
      
      $(window).on("scroll", function(){
@@ -25,6 +32,7 @@ $(document).ready(function() {
             }
         }
      });
+     
      /*features carousel */
 
      $('.features-carousel').owlCarousel({
@@ -89,6 +97,62 @@ $(document).ready(function() {
     }); 
 
 
+    /* */
+    
+    $.scrollIt ({
+        topOffset: -50
+    });
+
+
+    /* navbar collapse */
+    $(".nav-link").on("click", function(){
+        $(".navbar-collapse").collapse("hide")
+
+    });
+
+
+    /**toggle theme light&dark */
+    function toggleTheme(){
+        if(localStorage.getItem("niyi-theme") !== null){
+            if(localStorage.getItem("niyi-theme") === "dark"){
+                $("body").addClass("dark");
+            }
+            else{
+                $("body").removeClass("dark");
+            }
+        }
+        updateIcon();
+    }
+
+    toggleTheme();
+
+    $(".toggle-theme").on("click", function(){
+        $("body").toggleClass("dark");
+        if($("body").hasClass("dark")){
+            localStorage.setItem("niyi-theme","dark");
+
+        }
+        else{
+            localStorage.setItem("niyi-theme","light");
+
+        }
+        updateIcon();
+
+    });
+    function updateIcon(){
+        if($("body").hasClass("dark")){
+            $(".toggle-theme i").removeClass("fa-moon");
+            $(".toggle-theme i").addClass("fa-sun");
+        }
+        else{
+            $(".toggle-theme i").addClass("fa-moon");
+            $(".toggle-theme i").removeClass("fa-sun");
+        }
+    }
+
+    
+
+
     /* testimonials carousel*/ 
     $('.testimonials-carousel').owlCarousel({
         loop:true,
@@ -107,6 +171,6 @@ $(document).ready(function() {
             
             }
         }
-    }); 
+    });
     
 });

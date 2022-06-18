@@ -11,46 +11,54 @@
     <link rel="stylesheet" href="assets/css/main.css">
 
 </head>
+
 <body>
+    <div class="preloader">
+        <span></span>
+
+    </div>
+
+
+
     <!--navbar start-->
-    <nav class="navbar navbar-expand-md fixed-top">
+    <nav class="navbar navbar-expand-lg fixed-top">
         <div class="container">
             <!-- Brand -->
-            <a class="navbar-brand" href="index.html">niyi app</a>
+            <a class="navbar-brand" href="index.html">Niyi App</a>
             <!-- Toggler/collapside Button -->
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-              <span class="navbar-toggler-icon"></span>
+                <i class="fas fa-bars"></i>                
             </button>
-        
+
             <!-- Navbar links -->
             <div class="collapse navbar-collapse" id="collapsibleNavbar">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a class="nav-link active" href="#">Home</a>
+                        <a class="nav-link active" data-scroll-nav="0" href="#">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Features</a>
+                        <a class="nav-link" data-scroll-nav="1" href="#">Features</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Screenshot</a>
+                        <a class="nav-link" data-scroll-nav="2" href="#">Screenshot</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Testimonials</a>
+                        <a class="nav-link" data-scroll-nav="4" href="#">Testimonials</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Pricing</a>
+                        <a class="nav-link" data-scroll-nav="5" href="#">Pricing</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
+                        <a class="nav-link" data-scroll-nav="6" href="#">Contact</a>
                     </li>
                 </ul>
             </div>
-      </div>
+        </div>
     </nav>
     <!--navbar end-->
-    
+
     <!--home section stART-->
-    <section class="home d-flex align-items-center">
+    <section class="home d-flex align-items-center" id="home" data-scroll-index="0">
         <div class="effect-wrap">
             <i class="fas fa-plus effect effect-1"></i>
             <i class="fas fa-plus effect effect-2"></i>
@@ -58,18 +66,19 @@
         </div>
         <div class="container">
             <div class="row align-items-center">
-                <div class="col-lg-7 col-md-7">
+                <div class="col-md-7">
                     <div class="home-text">
-                        <h1>Best Mobile app Template for your Business</h1>
-                        <p>Lorem ipsum dolor sit,ing elit. Sunt ab ex nihil, reiciendis ipsum facilis! Quis dolorem voluptatibus excepturi, quidem modi, totam illum 
-                         eius cupiditate voluptas.</p>
+                        <h1>Best Mobile App Template For Your Business</h1>
+                        <p>Lorem ipsum dolor sit,ing elit. Sunt ab ex nihil, reiciendis ipsum facilis! Quis dolorem
+                            voluptatibus excepturi, quidem modi, totam illum
+                            eius cupiditate voluptas.</p>
                         <div class="home-btn">
-                            <a href="#" class="btn btn-1">download app</a>
+                            <a href="#"data-scroll-goto="3" class="btn btn-1">download app</a>
                             <button type="button" class="btn btn-1 video-play-btn"><i class="fas fa-play"></i></button>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-5 col-md-5 text-center">
+                <div class="col-md-5 text-center">
                     <div class="home-img">
                         <div class="circle"></div>
                         <img src="assets/image/try.jpeg" alt="niyi app">
@@ -80,9 +89,9 @@
     </section>
 
     <!--home section end-->
-    
+
     <!---features section start-->
-    <section class="features section-padding">
+    <section class="features section-padding" id="features" data-scroll-index="1">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-8">
@@ -98,37 +107,37 @@
                             <i class="fas fa-code"></i>
                         </div>
                         <h3>clean code</h3>
-                        <p>Lous offic Reiciendis nostru ab modi.</p>
+                        <p>offic Reiciendis nostru ab modi.</p>
                     </div>
-                
+
                     <div class="feature-item">
                         <div class="icon">
                             <i class="fas fa-edit"></i>
                         </div>
                         <h3>auto install system</h3>
-                        <p>mporibus officiis. mfjdf tru ab modi.</p>
+                        <p>mbus officiis. mfjdf tru ab modi.</p>
                     </div>
-                
+
                     <div class="feature-item">
                         <div class="icon">
                             <i class="fas fa-paint-brush"></i>
                         </div>
                         <h3>pixel perfect design</h3>
-                        <p>Lorem um dolor  hg, cciis. u ab modi.</p>
+                        <p>Lorem um dolor hg, cciis. u ab modi.</p>
                     </div>
                     <div class="feature-item">
                         <div class="icon">
                             <i class="fas fa-paint-brush"></i>
                         </div>
                         <h3>fast load app</h3>
-                        <p>Lorem um dolor  hg, cciis. u ab modi.</p>
+                        <p>Lorem um dolor hg, cciis. u ab modi.</p>
                     </div>
                     <div class="feature-item">
                         <div class="icon">
                             <i class="fas fa-check"></i>
                         </div>
                         <h3>fast load app</h3>
-                        <p>Lorem um dolor  hg, cciis. u ab modi.</p>
+                        <p>Lorem um dolor hg, cciis. u ab modi.</p>
                     </div>
                 </div>
             </div>
@@ -150,34 +159,34 @@
                         <h2>fun <span>facts</span></h2>
                     </div>
                     <div class="fun-facts-text">
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam quibusdam minus 
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam quibusdam minus
                             architecto atque praesentium incidunt quas alias consectetur accusantium at.</p>
-                            <div class="row">
-                                <div class="col-sm-6">
-                                    <div class="fun-facts-item style-1">
-                                        <h3>4000</h3>
-                                        <span>downloads</span>
-                                    </div>
-                                </div>
-                                <div class="col-sm-6">
-                                    <div class="fun-facts-item style-2">
-                                        <h3>200</h3>
-                                        <span>likes</span>
-                                    </div>
-                                </div>
-                                <div class="col-sm-6">
-                                    <div class="fun-facts-item style-3">
-                                        <h3>500</h3>
-                                        <span>5 star ratings</span>
-                                    </div>
-                                </div>
-                                <div class="col-sm-6">
-                                    <div class="fun-facts-item style-4">
-                                        <h3>150</h3>
-                                        <span>awards</span>
-                                    </div>
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="fun-facts-item style-1">
+                                    <h3>4000</h3>
+                                    <span>downloads</span>
                                 </div>
                             </div>
+                            <div class="col-sm-6">
+                                <div class="fun-facts-item style-2">
+                                    <h3>200</h3>
+                                    <span>likes</span>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="fun-facts-item style-3">
+                                    <h3>500</h3>
+                                    <span>5 star ratings</span>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="fun-facts-item style-4">
+                                    <h3>150</h3>
+                                    <span>awards</span>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -186,7 +195,7 @@
     <!--funfact end-->
 
     <!---app screenshots start-->
-    <section class="app-screenshots section-padding">
+    <section class="app-screenshots section-padding" id="screenshots" data-scroll-index="2">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-8">
@@ -209,7 +218,7 @@
                     <div class="screenshot-item">
                         <img src="assets/image/c - Copy.png" alt="screenshot">
                     </div>
-                    <div class="screenshot-item"> 
+                    <div class="screenshot-item">
                         <img src="assets/image/c - Copy.png" alt="screenshot">
                     </div>
                 </div>
@@ -219,7 +228,7 @@
     <!---app screenshots end-->
 
     <!--app download section start-->
-    <section class="app-download section-padding">
+    <section class="app-download section-padding" data-scroll-index="3">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-8">
@@ -234,30 +243,30 @@
                     <div class="app-download-item">
                         <i class="fab fa-google-play"></i>
                         <h3>google play</h3>
-                        <p>Lorem ipsum dolor sit ameectus voluptate ad commodi 
-                            neque repellat obcaecati cum, porro error 
+                        <p>Lorem ipsum dolor sit ameectus voluptate ad commodi
+                            neque repellat obcaecati cum, porro error
                             recusandae corr.</p>
-                            <a href="#" class="btn btn-2">download now</a>
+                        <a href="#" class="btn btn-2">download now</a>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6">
                     <div class="app-download-item">
                         <i class="fab fa-apple"></i>
                         <h3>apple store</h3>
-                        <p>Lorem ipsum dolor sit ameectus voluptate ad commodi 
-                            neque repellat obcaecati cum, porro error 
+                        <p>Lorem ipsum dolor sit ameectus voluptate ad commodi
+                            neque repellat obcaecati cum, porro error
                             recusandae corr.</p>
-                            <a href="#" class="btn btn-2">download now</a>
+                        <a href="#" class="btn btn-2">download now</a>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6">
                     <div class="app-download-item">
                         <i class="fab fa-windows"></i>
                         <h3>microsoft store</h3>
-                        <p>Lorem ipsum dolor sit ameectus voluptate ad commodi 
-                            neque repellat obcaecati cum, porro error 
+                        <p>Lorem ipsum dolor sit ameectus voluptate ad commodi
+                            neque repellat obcaecati cum, porro error
                             recusandae corr.</p>
-                            <a href="#" class="btn btn-2">download now</a>
+                        <a href="#" class="btn btn-2">download now</a>
                     </div>
                 </div>
             </div>
@@ -282,8 +291,8 @@
                         <div class="stop">1</div>
                         <h3>download</h3>
                         <p>Lorem ipsum dolor sit
-                             amet, consectetur adipisicing 
-                             elit. Commodi, perferendis!</p>
+                            amet, consectetur adipisicing
+                            elit. Commodi, perferendis!</p>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6">
@@ -291,8 +300,8 @@
                         <div class="stop">2</div>
                         <h3>create profile</h3>
                         <p>Lorem ipsum dolor sit
-                             amet, consectetur adipisicing 
-                             elit. Commodi, perferendis!</p>
+                            amet, consectetur adipisicing
+                            elit. Commodi, perferendis!</p>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6">
@@ -300,8 +309,8 @@
                         <div class="stop">3</div>
                         <h3>search product</h3>
                         <p>Lorem ipsum dolor sit
-                             amet, consectetur adipisicing 
-                             elit. Commodi, perferendis!</p>
+                            amet, consectetur adipisicing
+                            elit. Commodi, perferendis!</p>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6">
@@ -309,8 +318,8 @@
                         <div class="stop">4</div>
                         <h3>order</h3>
                         <p>Lorem ipsum dolor sit
-                             amet, consectetur adipisicing 
-                             elit. Commodi, perferendis!</p>
+                            amet, consectetur adipisicing
+                            elit. Commodi, perferendis!</p>
                     </div>
                 </div>
             </div>
@@ -321,7 +330,7 @@
 
     <!-- testimonials section start-->
 
-    <section class="testimonial section-padding">
+    <section class="testimonial section-padding" id="testimonials" data-scroll-index="4">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-8">
@@ -342,12 +351,12 @@
                         <h3>adewale ayanniyi</h3>
                         <span>UI design</span>
                         <div class="rating">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
                     </div>
                     <div class="testimonial-item">
                         <div class="img-box">
@@ -372,7 +381,7 @@
 
                         </div>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
-                        <h3>adewale  ayanniyi</h3>
+                        <h3>adewale ayanniyi</h3>
                         <span>UI design</span>
                         <div class="rating">
                             <i class="fas fa-star"></i>
@@ -389,7 +398,7 @@
 
                         </div>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
-                        <h3>adewale  ayanniyi</h3>
+                        <h3>adewale ayanniyi</h3>
                         <span>UI design</span>
                         <div class="rating">
                             <i class="fas fa-star"></i>
@@ -409,7 +418,7 @@
 
     <!-- Pricing Section Start -->
 
-    <section class="pricing section-padding">
+    <section class="pricing section-padding" id="pricing" data-scroll-index="5">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-8">
@@ -418,7 +427,7 @@
                     </div>
                 </div>
             </div>
-            <div class="row">
+            <div class="row justify-content-center">
                 <div class="col-lg-4 col-md-6">
                     <div class="pricing-plan">
                         <div class="pricing-header">
@@ -444,7 +453,7 @@
                             <a href="#" class="btn btn-2">get started</a>
                         </div>
                     </div>
-                </div>    
+                </div>
                 <div class="col-lg-4 col-md-6">
                     <div class="pricing-plan">
                         <div class="pricing-header">
@@ -470,8 +479,8 @@
                             <a href="#" class="btn btn-2">get started</a>
                         </div>
                     </div>
-                </div> 
-                <div class="col-lg-4 col-md-6">   
+                </div>
+                <div class="col-lg-4 col-md-6">
                     <div class="pricing-plan">
                         <div class="pricing-header">
                             <h3>Ultimate</h3>
@@ -545,7 +554,7 @@
 
     </section>
     <!--  Team Section End-->
-    
+
 
     <!-- Faq section start-->
     <section class="faq section-padding">
@@ -561,10 +570,50 @@
                 <div class="col-lg-10">
                     <div id="accordion">
                         <div class="accordion-item">
-                            <div class="accordion-header">
-
+                            <div class="accordion-header" data-toggle="collapse" data-target="#collapse-01">
+                                <h3>100 % Fluid Responsive - fits only device perfect</h3>
                             </div>
-                            
+                            <div class="collapse show" id="collapse-01" data-parent="#accordion">
+                                <div class="accordion-body">
+                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut laborum consectetur,
+                                        consequaturipsum dolor sit amet consectetur adipis veritatis accusamus aspernatur?</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <div class="accordion-header collapsed" data-toggle="collapse" data-target="#collapse-02">                           
+                            <h3>Clean Code</h3>
+                            </div>
+                            <div class="collapse" id="collapse-02" data-parent="#accordion">
+                                <div class="accordion-body">
+                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut laborum consectetur,
+                                        consequaturipsum dolor sit amet consectetur adipis veritatis accusamus aspernatur?</p>
+                                        
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <div class="accordion-header collapsed" data-toggle="collapse" data-target="#collapse-03">
+                            <h3>Flat, Modern and clean design</h3>
+                            </div>
+                            <div class="collapse" id="collapse-03" data-parent="#accordion">
+                                <div class="accordion-body">
+                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut laborum consectetur,
+                                        consequaturipsum dolor sit amet consectetur adipis veritatis accusamus aspernatur?</p>                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <div class="accordion-header collapsed" data-toggle="collapse" data-target="#collapse-04">
+                            <h3>Custom font support</h3>
+                            </div>
+                            <div class="collapse" id="collapse-04" data-parent="#accordion">
+                                <div class="accordion-body">
+                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut laborum consectetur,
+                                        consequaturipsum dolor sit amet consectetur adipis veritatis accusamus aspernatur?</p>                                       
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -573,13 +622,160 @@
     </section>
     <!-- Faq section end-->
 
+    <!--contact section start-->
+    <section class="contact section-padding" data-scroll-index="6">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="section-title">
+                        <h2>get in <span> touch</span></h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-5">
+                    <div class="contact-info">
+                        <h3>For Any Queries and Supports</h3>
+                        <div class="contact-info-item">
+                            <i class="fas fa-envelope"></i>
+                            <h4>Write To Us</h4>
+                            <p>Adeniyishobowale23@yahoo.com</p>
+                        </div>
+                        <div class="contact-info-item">
+                            <i class="fas fa-location-arrow"></i>
+                            <h4>Company Location</h4>
+                            <p>199 xyz lagos, Nigeria</p>
+                        </div>
+                        <div class="contact-info-item">
+                            <i class="fas fa-location-arrow"></i>
+                            <h4>Cal us on</h4>
+                            <p>09060226796</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-8 col-md-7">
+                    <div class="contact-form">
+                        <form>
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class="form-group">
+                                        <input type="text" placeholder="Your Name" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="form-group">
+                                        <input type="text" placeholder="Your Email" class="form-control">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="form-group">
+                                        <input type="text" placeholder="Your Phone" class="form-control">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="form-group">
+                                        <input type="text" placeholder="subject" class="form-control">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="form-group">
+                                        <textarea placeholder="Your Message" class="form-control"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <button type="submit" class="btn btn-2">Send Message </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--contact section end-->
+
+    <!-- footer start-->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-col">
+                        <h3>About Us</h3>
+                        <p>Lorem ipsum dolor  uohev oijhihf antium tempore consectetur.</p>
+                    </div> 
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-col">
+                        <h3>Company</h3>
+                        <ul>
+                            <li><a href="#"> Private policy</a></li>
+                            <li><a href="#">Terms & Conditions</a></li>
+                            <li><a href="#">Latest blogs</a></li>
+                            <li><a href="#">Apps services</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-col">
+                        <h3>Quick Links</h3>
+                        <ul>
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#features">Features</a></li>
+                            <li><a href="#screenshots">screenshots</a></li>
+                            <li><a href="#pricing">Pricing</a></li>
+                            <li><a href="#testimonials">Testimonials</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-col">
+                        <h3>Social Pages</h3>
+                        <ul>
+                            <li><a href="#">Facebook</a></li>
+                            <li><a href="#">Twitter</a></li>
+                            <li><a href="#">Instagram</a></li>
+                            <li><a href="#">linkedln</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <p class="copyright-text">&copy;2022 @ The Adeniyiapp</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+<!--footer end-->
+    
+
+    <!--toggle theme start - light and dark-->
+    <div class="toggle-theme">
+        <i class="fas">
+
+        </i>
+
+    </div>
+    <!--toggle theme end-->
+
+
+
     <!--video pop-up start-->
     <div class="video-popup">
         <div class="video-popup-inner">
             <i class="fas fa-times video-popup-close"></i>
             <div class="iframe-box">
-                <iframe id="player-1"src="https://www.youtube.com/embed/1NWBO8L81J8" 
-                title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; 
+                <iframe id="player-1" src="https://www.youtube.com/embed/1NWBO8L81J8" title="YouTube video player"
+                    allow="accelerometer; autoplay; clipboard-write; 
                 encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
         </div>
@@ -590,21 +786,12 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-    <script src="assets/javascript/jquery.slim.min.js"></script>
+    <script src="assets/javascript/jquery.min.js"></script>
     <script src="assets/javascript/popper.min.js"></script>
     <script src="assets/javascript/bootstrap.min.js"></script>
     <script src="assets/javascript/owl.carousel.min.js"></script>
+    <script src="assets/javascript/scrollIt.min.js"></script>
     <script src="assets/javascript/main.js"></script>
 </body>
+
 </html>
